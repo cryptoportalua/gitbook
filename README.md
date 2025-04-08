@@ -49,4 +49,4 @@ CryptoPortal створений, щоб:
 
 {% embed url="https://t.me/cryptoportalua_chat" %}
 
-{% @github-files/github-code-block %}
+{% embed url="https://github.com/cryptoportalua" %}
