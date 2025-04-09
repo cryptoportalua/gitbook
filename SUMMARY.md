@@ -4,7 +4,7 @@
 
 ## Nodes
 
-* [Dill](nodes/dill.md)
+* [Gensyn](nodes/dill.md)
 
 ## Depins
 
