@@ -104,3 +104,25 @@ ssh -L 3000:localhost:3000 -i key_directory root@Server_IP
 
 <figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
+Тисните кнопку "Login" , після цього ви можете зареєструватись через google пошту, або вписати її вручну.
+
+<figure><img src="../.gitbook/assets/Знімок екрана 2025-04-10 о 14.41.32.png" alt=""><figcaption></figcaption></figure>
+
+Після того як залогінитесь у вас має з'явитись такий надпис.&#x20;
+
+<figure><img src="../.gitbook/assets/Знімок екрана 2025-04-10 о 14.29.10.png" alt=""><figcaption></figcaption></figure>
+
+> Would you like to push models you train in the RL swarm to the Hugging Face Hub?  y/ N \
+> Тут натискаєте "n" і  Enter
+
+<figure><img src="../.gitbook/assets/Знімок екрана 2025-04-10 о 14.31.32.png" alt=""><figcaption></figcaption></figure>
+
+&#x20;В логах з'явиться ваші три "name words" та ID вашої ноди. Можете їх виписати в таблицю для того що б подальшому можна було моніторити її в дашбоарді.
+
+<figure><img src="../.gitbook/assets/Знімок екрана 2025-04-10 о 14.32.30.png" alt=""><figcaption></figcaption></figure>
+
+Після того як все повністю нода прогрузить всі піри і з'єднається, по часу все залежить від сервера і напливу на мережу. У вас мають з'явитись ось такі логи.&#x20;
+
+<figure><img src="../.gitbook/assets/Знімок екрана 2025-04-10 о 17.36.23.png" alt=""><figcaption></figcaption></figure>
+
+Гайд в подальшому буде оновлюватись, чекаємо апдейтів.
