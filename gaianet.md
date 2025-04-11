@@ -65,9 +65,9 @@ source ~/.bashrc && gaianet init
 gaianet start
 ```
 
-<figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
-
 #### Переходимо у браузер за посиланням з терміналу
+
+<figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src=".gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
