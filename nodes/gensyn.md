@@ -67,7 +67,7 @@ cd .. && ./run_rl_swarm.sh
 
 Якщо ви бачите наступні логи, значить поки все вірно
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
 Налаштовуємо тунель між сервером та своїм компом щоб підключити пошту.
 
@@ -102,7 +102,7 @@ ssh -L 3000:localhost:3000 -i key_directory root@Server_IP
 
 Після створення тунелю можна переходити у браузер та відкриваємо сторінку із `localhost:3000`
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Тисните кнопку "Login" , після цього ви можете зареєструватись через google пошту, або вписати її вручну.
 
