@@ -15,7 +15,7 @@ source <(curl -s https://raw.githubusercontent.com/cryptoportalua/scripts/refs/h
 curl -sSfL 'https://github.com/GaiaNet-AI/gaianet-node/releases/latest/download/install.sh' | bash
 ```
 
-Зберігаємо собі `device-id` та `адресу гаманця`
+Зберігаємо собі `device-id` та `node-id`
 
 <figure><img src=".gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
@@ -71,4 +71,46 @@ gaianet start
 
 <figure><img src=".gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
-Тиснемо старт і спілкуємось із чатом, за кожен запит нараховуються поінти
+Тиснемо старт і спілкуємось із чатом, за кожен запит нараховуються поінти. Але спершу добавимо ноду в дашбоард сайту Gaianet.
+
+{% hint style="success" %}
+[https://www.gaianet.ai/gaia-domain-name](https://www.gaianet.ai/gaia-domain-name)
+{% endhint %}
+
+<figure><img src=".gitbook/assets/Знімок екрана 2025-04-11 о 18.10.18.png" alt=""><figcaption></figcaption></figure>
+
+Заходимо на сайт і конектимо ваш будь-який тестовий гаманець.&#x20;
+
+<figure><img src=".gitbook/assets/Знімок екрана 2025-04-11 о 18.04.36.png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src=".gitbook/assets/Знімок екрана 2025-04-11 о 18.05.00.png" alt=""><figcaption></figcaption></figure>
+
+Натискаємо "Connect new node" Тепер добавляємо `node-id` та `device-id`
+
+<figure><img src=".gitbook/assets/Знімок екрана 2025-04-11 о 18.05.12.png" alt=""><figcaption></figcaption></figure>
+
+Після того у вас з'являється ваша нода в дашбоард, можна прослідкувати що ваша нода онлайн по зеленому статусу. Тепер добавляємо домейн для качання поінтів. Тиснемо три крапки справа і натискаємо "Join Domain"&#x20;
+
+<figure><img src=".gitbook/assets/Знімок екрана 2025-04-11 о 18.05.43.png" alt=""><figcaption></figcaption></figure>
+
+<div><figure><img src=".gitbook/assets/Знімок екрана 2025-04-11 о 18.05.58.png" alt=""><figcaption></figcaption></figure> <figure><img src=".gitbook/assets/Знімок екрана 2025-04-11 о 18.06.21.png" alt=""><figcaption></figcaption></figure></div>
+
+Тиснемо "Next Step", одразу нам дається вибір чий саме домейн можна вибрати. Вам треба вибрати той домейн на якому стоїть правильна версія Qwen2-0.5B,  по іншому вас непропустить система. Вибираєте де не дуже багато людей, орієнтовно до 100, там більше поінтів капає.&#x20;
+
+<figure><img src=".gitbook/assets/Знімок екрана 2025-04-11 о 18.04.36 (1).png" alt=""><figcaption></figcaption></figure>
+
+Нода у вас вже стоїть з домейном, тепер ідем в GaiaXp.
+
+<figure><img src=".gitbook/assets/Знімок екрана 2025-04-11 о 18.47.46.png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src=".gitbook/assets/Знімок екрана 2025-04-11 о 18.49.28.png" alt=""><figcaption></figcaption></figure>
+
+У вкладці Tasks конектимо всі соціалки. Ви отримуєте за це gaiaPoints, також за спілкування з чатом у вас будуть капати Node Points. Для того щоб ці поінти капали вам ще треба буде закинути пару центів в ефірі на гаманець в мережі Base. Це для того що б обмінювати поінти на gaiaCredits для отримування поінтів. Це можна робити не часто,  а коли у вас накопиться максимальна можливий свап 1000/500.
+
+<figure><img src=".gitbook/assets/Знімок екрана 2025-04-11 о 18.54.34.png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src=".gitbook/assets/Знімок екрана 2025-04-11 о 18.58.33.png" alt=""><figcaption></figcaption></figure>
+
+Ось так виглядає всі запити в чаті які перетворюються в поінти. Ця інформація присутня в вкладці  gaiaPoints.\
+\
+Також собі на сервер можна поставити бота фармилку, який буде робити запити за вас. Як тільки ми його оновим одразу додамо в гайд.
