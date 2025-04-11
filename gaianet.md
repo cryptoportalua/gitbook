@@ -6,6 +6,8 @@
 source <(curl -s https://raw.githubusercontent.com/cryptoportalua/scripts/refs/heads/main/gaianet)
 ```
 
+[Перевірка роботи ноди](gaianet.md#perekhodimo-u-brauzer-za-posilannyam-z-terminalu)
+
 ## Ручне встановлення
 
 ```bash
@@ -65,7 +67,7 @@ gaianet start
 
 <figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
-Переходимо у браузер за посиланням з терміналу
+#### Переходимо у браузер за посиланням з терміналу
 
 <figure><img src=".gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
