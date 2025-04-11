@@ -22,8 +22,7 @@ curl -sSfL 'https://github.com/GaiaNet-AI/gaianet-node/releases/latest/download/
 <summary>Міняємо стандартну модель на Qwen2 0.5B щоб фармити більше поінтів</summary>
 
 ```bash
-# Вписуєм адресу ноди в перемінну
-ADDRESS=""
+ADDRESS=$(gaianet info | grep "Node ID" | awk -F': ' '{print $2}')
 ```
 
 ```bash
