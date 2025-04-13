@@ -5,6 +5,7 @@
 ## Nodes
 
 * [Gensyn](nodes/gensyn.md)
+* [Dill](nodes/dill.md)
 
 ***
 
