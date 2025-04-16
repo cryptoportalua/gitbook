@@ -78,13 +78,15 @@ drosera apply
 
 <figure><img src="../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
 
-Тиснемо Send Bloom Boost та відправляємо будь яку кількість ефіра для буста
+Тиснемо **Send Bloom Boost** та відправляємо будь яку кількість ефіра для буста
 
 <figure><img src="../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
 
+Вписуємо кількість ефіра, дивлячись скільки у вас ефіра. І потім підтвердити на сайті і гаманці.
+
 <figure><img src="../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
 
-Коли транзакція пройде успішно буст з'явиться у профілі
+Коли транзакція пройде успішно буст з'явиться у профілі.
 
 <figure><img src="../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
 
