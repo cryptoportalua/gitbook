@@ -98,5 +98,85 @@ drosera dryrun && cd
 
 ### Запуск ноди
 
+```bash
+# Edit drosera.toml
+cd ~/my-drosera-trap && source ~/.bashrc
+sed -i '/^private_trap/d' ~/my-drosera-trap/drosera.toml
+sed -i '/^whitelist/d' ~/my-drosera-trap/drosera.toml
 ```
+
+Записуємо адресу свого гаманця та його приватний ключ
+
+```bash
+ADDRESS=
+PRIV_KEY=
+```
+
+```bash
+echo "private_trap = true" >> ~/my-drosera-trap/drosera.toml
+echo "whitelist = [\"$ADDRESS\"]" >> ~/my-drosera-trap/drosera.toml
+export DROSERA_PRIVATE_KEY="$PRIV_KEY"
+drosera apply
+```
+
+<figure><img src="../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
+
+Вписуємо `ofc` та тиснемо `enter`
+
+Перевіряємо наш дажборд, trap має стати `Private`
+
+<figure><img src="../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
+
+```bash
+cd ~/my-drosera-trap && curl -LO https://github.com/drosera-network/releases/releases/download/v1.16.2/drosera-operator-v1.16.2-x86_64-unknown-linux-gnu.tar.gz && \
+tar -xvf drosera-operator-v1.16.2-x86_64-unknown-linux-gnu.tar.gz && \
+cp drosera-operator /usr/bin
+```
+
+```bash
+drosera-operator register --eth-rpc-url https://ethereum-holesky-rpc.publicnode.com --eth-private-key $DROSERA_PRIVATE_KEY
+```
+
+```bash
+ufw allow 31313
+ufw allow 31314
+```
+
+```bash
+sudo tee /etc/systemd/system/drosera.service > /dev/null <<EOF
+[Unit]
+Description=Drosera Node Service
+After=network-online.target
+
+[Service]
+User=$USER
+Restart=always
+RestartSec=15
+LimitNOFILE=65535
+ExecStart=$(which drosera-operator) node --db-file-path /root/.drosera.db --network-p2p-port 31313 --server-port 31314 \\
+    --eth-rpc-url https://ethereum-holesky-rpc.publicnode.com \\
+    --eth-backup-rpc-url https://1rpc.io/holesky \\
+    --drosera-address 0xea08f7d533C2b9A62F40D5326214f39a8E3A32F8 \\
+    --eth-private-key $DROSERA_PRIVATE_KEY \\
+    --listen-address 0.0.0.0 \\
+    --network-external-p2p-address $(curl -s https://api.ipify.org) \\
+    --disable-dnr-confirmation true
+EOF
+```
+
+```bash
+sudo systemctl daemon-reload
+sudo systemctl enable drosera
+sudo systemctl restart drosera
+```
+
+```bash
+journalctl -u drosera -f -o cat
+```
+
+```bash
+drosera-operator optin \
+--eth-rpc-url https://ethereum-holesky-rpc.publicnode.com \
+--eth-private-key $DROSERA_PRIVATE_KEY \
+--trap-config-address 0xd0fe1a638553b6461c5675332ed3816239cf1606
 ```
