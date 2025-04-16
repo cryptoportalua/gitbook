@@ -4,13 +4,10 @@
 
 ## Nodes
 
+* [Drosera](nodes/drosera.md)
 * [Gensyn](nodes/gensyn.md)
 * [Dill](nodes/dill.md)
 
 ***
 
 * [Gaianet](gaianet.md)
-
-## Depins
-
-* [Grass](depins/grass.md)
