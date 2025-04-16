@@ -8,6 +8,12 @@ source <(curl -s https://raw.githubusercontent.com/cryptoportalua/scripts/refs/h
 
 [Перевірка роботи ноди](gaianet.md#perekhodimo-u-brauzer-za-posilannyam-z-terminalu)
 
+## Оновлення
+
+```bash
+echo '2' | source <(curl -s https://raw.githubusercontent.com/cryptoportalua/scripts/refs/heads/main/gaianet)
+```
+
 ## Ручне встановлення
 
 ```bash
