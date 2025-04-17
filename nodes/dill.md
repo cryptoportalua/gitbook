@@ -100,3 +100,5 @@ cat /root/dill/validator_keys/deposit_data*
 {% embed url="https://alps.dill.xyz/validators" %}
 
 Або на сайті також є вкладка валідатори, на якому ви можете побачити свій валідатор. Для створення валідатор і що б побачити його треба буде почекати трохи часу.  Поки що на разі по встановленню це все. Далі будуть апдейти
+
+{% embed url="https://t.me/cryptoportalua_chat" %}

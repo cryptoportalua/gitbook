@@ -126,3 +126,5 @@ ssh -L 3000:localhost:3000 -i key_directory root@Server_IP
 <figure><img src="../.gitbook/assets/Знімок екрана 2025-04-10 о 17.36.23.png" alt=""><figcaption></figcaption></figure>
 
 Гайд в подальшому буде оновлюватись, чекаємо апдейтів.
+
+{% embed url="https://t.me/cryptoportalua_chat" %}

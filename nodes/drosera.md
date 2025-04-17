@@ -215,3 +215,5 @@ drosera-operator optin \
 <figure><img src="../.gitbook/assets/Знімок екрана 2025-04-17 о 12.03.49.png" alt=""><figcaption></figcaption></figure>
 
 Якщо у вас такі блоки, вітаю ви встановили ноду Drosera. Чекаємо на апдейт і ми також будемо оновлювати гайд.
+
+{% embed url="https://t.me/cryptoportalua_chat" %}
