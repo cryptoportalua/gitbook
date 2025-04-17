@@ -182,9 +182,23 @@ sudo systemctl restart drosera
 journalctl -u drosera -f -o cat
 ```
 
+Ідем на сайт і копіюємо адресу трапа, якщо ви хочете зробити його через термінал. Абож ви можете зробити це на сайті  настинувши клавішу `Opt In+`
+
+<figure><img src="../.gitbook/assets/Знімок екрана 2025-04-17 о 11.58.18.png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/Знімок екрана 2025-04-17 о 11.58.50.png" alt=""><figcaption></figcaption></figure>
+
+І після того робимо Opt In  якщо ви робете через термінал.
+
 ```bash
 drosera-operator optin \
 --eth-rpc-url https://ethereum-holesky-rpc.publicnode.com \
 --eth-private-key $DROSERA_PRIVATE_KEY \
---trap-config-address 0xd0fe1a638553b6461c5675332ed3816239cf1606
+--trap-config-address "ввести адресу трапа"
 ```
+
+Після того у вас дашбоарді має зявитись ось такі зелені блоки, перше підуть червоні просто трохи почекайте.
+
+<figure><img src="../.gitbook/assets/Знімок екрана 2025-04-17 о 12.03.49.png" alt=""><figcaption></figcaption></figure>
+
+Якщо у вас такі блоки, вітаю ви встановили ноду Drosera. Чекаємо на апдейт і ми також будемо оновлювати гайд.
