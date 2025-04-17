@@ -1,5 +1,9 @@
 # Drosera
 
+## Скрипт
+
+source <(curl -s https://raw.githubusercontent.com/cryptoportalua/scripts/refs/heads/main/drosera)
+
 ## Ручне встановлення
 
 Качаємо кран на сайті гугла `web3`
