@@ -124,6 +124,13 @@ PRIV_KEY=
 echo "private_trap = true" >> ~/my-drosera-trap/drosera.toml
 echo "whitelist = [\"$ADDRESS\"]" >> ~/my-drosera-trap/drosera.toml
 export DROSERA_PRIVATE_KEY="$PRIV_KEY"
+```
+
+{% hint style="info" %}
+Треба почекати 10 хв після цих команд і можете робити наступну.
+{% endhint %}
+
+```
 drosera apply
 ```
 
