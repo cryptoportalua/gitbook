@@ -2,6 +2,14 @@
 
 ## Ручне встановлення
 
+Качаємо кран на сайті гугла `web3`
+
+{% embed url="https://cloud.google.com/application/web3/faucet/ethereum/holesky" %}
+
+<figure><img src="../.gitbook/assets/Знімок екрана 2025-04-17 о 09.57.40.png" alt=""><figcaption></figcaption></figure>
+
+Вам має прийти 1 ETH в мережі Holesky, переважно більшість до 1 хв часу. І тепер готові для встановлення.
+
 ### Підготовка сервера
 
 ```bash
