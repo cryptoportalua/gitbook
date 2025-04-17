@@ -7,7 +7,4 @@
 * [Drosera](nodes/drosera.md)
 * [Gensyn](nodes/gensyn.md)
 * [Dill](nodes/dill.md)
-
-***
-
-* [Gaianet](gaianet.md)
+* [Gaianet](nodes/gaianet.md)
