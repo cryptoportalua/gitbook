@@ -102,7 +102,7 @@ ssh -L 3000:localhost:3000 -i key_directory root@Server_IP
 
 Після створення тунелю можна переходити у браузер та відкриваємо сторінку із `localhost:3000`
 
-<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Тисните кнопку "Login" , після цього ви можете зареєструватись через google пошту, або вписати її вручну.
 

@@ -96,7 +96,11 @@ drosera apply
 
 <figure><img src="../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
 
-Вписуємо кількість ефіра, дивлячись скільки у вас ефіра. І потім підтвердити на сайті і гаманці.
+Чим більше ефіра тим більший буст, на що конкретно впливає буст поки не відомо, максимальна кількість більше 2 ETH
+
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+Вписуємо бажану кількість ефіра та тиснем підтвердити на сайті і в гаманці.
 
 <figure><img src="../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
 
@@ -154,8 +158,22 @@ tar -xvf drosera-operator-v1.16.2-x86_64-unknown-linux-gnu.tar.gz && \
 cp drosera-operator /usr/bin
 ```
 
+Для коректної роботи ноди рекомендуємо використовувати приватні RPC Holesky, їх можна отримати на наступних сервісах:
+
+1. [https://blastapi.io/](https://blastapi.io/)
+2. [https://www.alchemy.com/](https://www.alchemy.com/)
+3. [https://www.infura.io/](https://www.infura.io/)
+4. [https://www.quicknode.com/](https://www.quicknode.com/)
+
+Зберігаємо 2 RPC в перемінні, один буде основним, інший резервним. Ми використовуємо 2 акаунти blastapi
+
 ```bash
-drosera-operator register --eth-rpc-url https://ethereum-holesky-rpc.publicnode.com --eth-private-key $DROSERA_PRIVATE_KEY
+HOLESKY_RPC="ваш рпс 1"
+HOLESKY_RPC1="ваш рпс 2"
+```
+
+```bash
+drosera-operator register --eth-rpc-url $HOLESKY_RPC --eth-private-key $DROSERA_PRIVATE_KEY
 ```
 
 ```bash
@@ -175,8 +193,8 @@ Restart=always
 RestartSec=15
 LimitNOFILE=65535
 ExecStart=$(which drosera-operator) node --db-file-path /root/.drosera.db --network-p2p-port 31313 --server-port 31314 \\
-    --eth-rpc-url https://ethereum-holesky-rpc.publicnode.com \\
-    --eth-backup-rpc-url https://1rpc.io/holesky \\
+    --eth-rpc-url $HOLESKY_RPC \\
+    --eth-backup-rpc-url $HOLESKY_RPC1 \\
     --drosera-address 0xea08f7d533C2b9A62F40D5326214f39a8E3A32F8 \\
     --eth-private-key $DROSERA_PRIVATE_KEY \\
     --listen-address 0.0.0.0 \\
