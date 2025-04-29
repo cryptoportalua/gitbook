@@ -4,6 +4,15 @@
 Даний гайд протестовано на сервері без GPU (12 CPU / 64 RAM)
 {% endhint %}
 
+## Зміст
+
+* [Скрипт](gensyn.md#skript)
+* [Ручне встановлення](gensyn.md#ruchne-vstanovlennya)
+  * [Підготовка сервера](gensyn.md#pidgotovka-servera)
+  * [Встановлення ноди](gensyn.md#vstanovlennya-nodi)
+  * [Підключення пошти](gensyn.md#pidklyuchennya-poshti)
+* [Оновлення до v0.3.2](gensyn.md#onovlennya-do-v0.3.2)
+
 ## Скрипт
 
 ```bash
@@ -102,7 +111,7 @@ ssh -L 3000:localhost:3000 -i key_directory root@Server_IP
 
 Після створення тунелю можна переходити у браузер та відкриваємо сторінку із `localhost:3000`
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Тисните кнопку "Login" , після цього ви можете зареєструватись через google пошту, або вписати її вручну.
 
@@ -126,5 +135,28 @@ ssh -L 3000:localhost:3000 -i key_directory root@Server_IP
 <figure><img src="../.gitbook/assets/Знімок екрана 2025-04-10 о 17.36.23.png" alt=""><figcaption></figcaption></figure>
 
 Гайд в подальшому буде оновлюватись, чекаємо апдейтів.
+
+## Оновлення до v0.3.2
+
+```bash
+screen -x gensyn
+```
+
+```bash
+cd ~/rl-swarm && source .venv/bin/activate
+```
+
+```bash
+git reset --hard && \
+git fetch --all && git checkout tags/v0.3.2
+```
+
+```bash
+./run_rl_swarm.sh
+```
+
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+Продовжуєм далі по [гайду](gensyn.md#pidklyuchennya-poshti)
 
 {% embed url="https://t.me/cryptoportalua_chat" %}
