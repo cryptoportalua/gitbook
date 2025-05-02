@@ -11,7 +11,7 @@
   * [Підготовка сервера](gensyn.md#pidgotovka-servera)
   * [Встановлення ноди](gensyn.md#vstanovlennya-nodi)
   * [Підключення пошти](gensyn.md#pidklyuchennya-poshti)
-* [Оновлення до v0.4.1](gensyn.md#onovlennya-do-v0.3.2)
+* [Оновлення до v0.4.1](gensyn.md#onovlennya-do-v0.4.1)
 
 ## Скрипт
 
