@@ -78,7 +78,7 @@ export DROSERA_PRIVATE_KEY="$PRIV_KEY"
 drosera apply
 ```
 
-<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 
 Вписуємо `ofc` та тиснемо `enter`
 
@@ -98,7 +98,7 @@ drosera apply
 
 Чим більше ефіра тим більший буст, на що конкретно впливає буст поки не відомо, максимальна кількість більше 2 ETH
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Вписуємо бажану кількість ефіра та тиснем підтвердити на сайті і в гаманці.
 

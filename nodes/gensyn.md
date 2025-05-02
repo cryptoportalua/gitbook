@@ -11,7 +11,7 @@
   * [Підготовка сервера](gensyn.md#pidgotovka-servera)
   * [Встановлення ноди](gensyn.md#vstanovlennya-nodi)
   * [Підключення пошти](gensyn.md#pidklyuchennya-poshti)
-* [Оновлення до v0.3.2](gensyn.md#onovlennya-do-v0.3.2)
+* [Оновлення до v0.4.1](gensyn.md#onovlennya-do-v0.3.2)
 
 ## Скрипт
 
@@ -70,13 +70,19 @@ yarn upgrade && yarn add next@latest && yarn add viem@latest && \
 cd .. && ./run_rl_swarm.sh
 ```
 
-`Would you like to connect to the Testnet? [Y/n]` -  вводимо "Y" та Enter
-
 ### Підключення пошти
+
+<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+
+`Would you like to connect to the Testnet? [Y/n]` - Тиснемо Y
+
+`Which swarm would you like to join (Math (A) or Math Hard (B))? [A/b]` - Для серверів CPU тиснемо A
+
+`How many parameters (in billions)? [0.5, 1.5, 7, 32, 72]` - для слаших серверів чи vps обираєм `0,5`, для дедіків можна поставити `1,5`
 
 Якщо ви бачите наступні логи, значить поки все вірно
 
-<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 Налаштовуємо тунель між сервером та своїм компом щоб підключити пошту.
 
@@ -111,7 +117,7 @@ ssh -L 3000:localhost:3000 -i key_directory root@Server_IP
 
 Після створення тунелю можна переходити у браузер та відкриваємо сторінку із `localhost:3000`
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Тисните кнопку "Login" , після цього ви можете зареєструватись через google пошту, або вписати її вручну.
 
@@ -124,7 +130,7 @@ ssh -L 3000:localhost:3000 -i key_directory root@Server_IP
 > Would you like to push models you train in the RL swarm to the Hugging Face Hub?  y/ N \
 > Тут натискаєте "n" і  Enter
 
-<figure><img src="../.gitbook/assets/Знімок екрана 2025-04-10 о 14.31.32.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;В логах з'явиться ваші три "name words" та ID вашої ноди. Можете їх виписати в таблицю для того що б подальшому можна було моніторити її в дашбоарді.
 
@@ -136,7 +142,7 @@ ssh -L 3000:localhost:3000 -i key_directory root@Server_IP
 
 Гайд в подальшому буде оновлюватись, чекаємо апдейтів.
 
-## Оновлення до v0.3.2
+## Оновлення до v0.4.1
 
 ```bash
 screen -x gensyn
@@ -148,14 +154,12 @@ cd ~/rl-swarm && source .venv/bin/activate
 
 ```bash
 git reset --hard && \
-git fetch --all && git checkout tags/v0.3.2
+git fetch --all && git checkout tags/v0.4.1
 ```
 
 ```bash
 ./run_rl_swarm.sh
 ```
-
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 Продовжуєм далі по [гайду](gensyn.md#pidklyuchennya-poshti)
 
