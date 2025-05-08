@@ -232,6 +232,65 @@ drosera-operator optin \
 
 <figure><img src="../.gitbook/assets/Знімок екрана 2025-04-17 о 12.03.49.png" alt=""><figcaption></figcaption></figure>
 
-Якщо у вас такі блоки, вітаю ви встановили ноду Drosera. Чекаємо на апдейт і ми також будемо оновлювати гайд.
+## Update
+
+Перше треба оновити CLI Drosera
+
+```
+curl -L https://app.drosera.io/install | bash
+```
+
+```
+source /root/.bashrc
+```
+
+```
+droseraup
+```
+
+У вас має з'явитись логи з версією v.1.17.1 Drosera&#x20;
+
+<figure><img src="../.gitbook/assets/Знімок екрана 2025-05-08 о 21.40.25.png" alt=""><figcaption></figcaption></figure>
+
+Тобі потрібно замінити попередній Seed Node RPC, вказаний у полі `drosera_rpc` у файлі `drosera.toml`, на новий Seed Node.
+
+```
+cd my-drosera-trap
+```
+
+```
+nano drosera.toml
+```
+
+<figure><img src="../.gitbook/assets/Знімок екрана 2025-05-08 о 21.44.02.png" alt=""><figcaption></figcaption></figure>
+
+Тобі потрібно замінити адресу `https://seed-node.testnet.drosera.io` на нову Seed Node адресу: `https://relay.testnet.drosera.io` у полі `drosera_rpc` файлу `drosera.toml`.
+
+### Зробит веріф  трап адреси
+
+У файлі `drosera.toml` переконайся, що є рядок, у якому вказана адреса твоєї пастки (trap), у такому форматі 0x341......
+
+<figure><img src="../.gitbook/assets/Знімок екрана 2025-05-08 о 21.48.12.png" alt=""><figcaption></figcaption></figure>
+
+У нас має бути вже адреса у файлі, якщо там немає адреси то ви можете скопіювати його на сайті  і вставити у файл як зазначено вище.
+
+Далі треба зробити Re-Apply Drosera config
+
+```
+DROSERA_PRIVATE_KEY=xxxxxxxx drosera apply
+```
+
+```
+xxxxxxxx- це ваш пріват кей
+після цього маєте вести у консоль "ofc"
+```
+
+<figure><img src="../.gitbook/assets/Знімок екрана 2025-05-08 о 21.53.35.png" alt=""><figcaption></figcaption></figure>
+
+Після цього ви можете зайти в дашбоард на сайті. І ви маєто побачити зелені блоки.
+
+<figure><img src="../.gitbook/assets/Знімок екрана 2025-05-08 о 22.05.39.png" alt=""><figcaption></figcaption></figure>
+
+Далі очікуємо апдейтів подальших можете слідкувати у нашому телеграм каналі.
 
 {% embed url="https://t.me/cryptoportalua_chat" %}
